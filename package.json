@@ -1,0 +1,26 @@
+{
+  "name": "commerce2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "ginit": "^2.0.2",
+    "gitignore": "^0.7.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.4",
+    "mongoose-unique-validator": "^3.1.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7"
+  }
+}
