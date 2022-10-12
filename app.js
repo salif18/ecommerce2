@@ -28,7 +28,14 @@ app.use((req, res, next) => {
 
 //--- FONTIONS--->
 
-// A-routes des pages
+// A- routes vers la base des donnees
+// 1- routes CRUD
+app.use('/produits',produitsRouter);
+
+// 2-routes des authentifications
+app.use('/auth',userRouter);
+
+// B-routes des pages
 // 1- acceuil
 app.get('/home',(req,res)=>{
     res.render('shop')
@@ -54,12 +61,7 @@ app.get('/inscription',(req,res) => {
     res.render('shopinscr')
 });
 
-// B- routes vers la base des donnees
-// 1- routes CRUD
-app.use('/produits',produitsRouter);
 
-// 2-routes des authentifications
-app.use('/auth',userRouter);
 
 //--- Fin des Fonctions ---
 //exportation de l'application dans le server

@@ -17,7 +17,12 @@ const Users = require('../models/Table_user');
             password:hash,
         });
         users.save()
-        .then(() => res.status(201).json('utilisateur inserer'))
+        .then(() =>{
+            if(users){
+         res.status(201).json('utilisateur inserer')
+         location.replace('/home')
+            }
+        })
         .catch((error) => res.status(400).json({
             message:'Utilisateur non inserer',
             error:error
@@ -56,8 +61,7 @@ const Users = require('../models/Table_user');
             { userId: user._id },
             'RANDOM_TOKEN_SECRET',
             { expiresIn: '24h' }
-        )
-    })
+        )})
 
     })
     .catch((error) => res.status(500).json({

@@ -95,7 +95,7 @@ const RegexA = (valeur) => {
     const aEnvoyer = infos;
     const myEnv = async () =>{
         try{
-          const res = await fetch('http://localhost:3900/auth/signup',{
+          const res = await fetch('auth/signup',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(aEnvoyer)
@@ -105,16 +105,12 @@ const RegexA = (valeur) => {
           }else{
             console.error('erreur:',res.status)
           }
-        }catch(e){
-            console.log(e);
+        }catch(error){
+            console.log({error});
         }
     };
     myEnv();
-    document.write('Felicitation! votre inscription a ete valable'
-      
-    );
-    document.location.href=""
-
+    document.write('Felicitation! votre inscription a ete valable');
     
   }else{
     console.log('Veuillez remplir tous les champs');
