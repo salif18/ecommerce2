@@ -9,19 +9,19 @@ const produitsCtrl = require ('../controllers/produits');
 
 //routes 
 //inserer produit
-router.post('/' , auth, multer,produitsCtrl.insertArticles);
+router.post('/' , auth,  multer,produitsCtrl.insertArticles);
 
 //afficher produits
 router.get('/', auth, produitsCtrl.afficheAllArticles);
 
 //selectioner un produit
-router.get('/:id',auth, produitsCtrl.afficheUnArticles);
+router.get('/:id', auth, produitsCtrl.afficheUnArticles);
 
 //modifier un produit
-router.put('/:id',auth, multer, produitsCtrl.modifierArticles);
+router.put('/:id', auth, multer, produitsCtrl.modifierArticles);
 
 //supprimer un produit
-router.delete('/:id',auth, multer, produitsCtrl.supprimerArticles);
+router.delete('/:id', auth, multer, produitsCtrl.supprimerArticles);
 
 //exportation
 module.exports = router;

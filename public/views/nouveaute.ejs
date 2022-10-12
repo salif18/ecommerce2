@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-----container globale------------>
-<div class="container-fluid " style="background-image: url(../imageshop/bc.jpg);">
+<div class="container-fluid ">
 <!------navebare-------->
 <nav class="navbar navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
@@ -55,6 +55,29 @@
     </div>
   </nav>
 <!------Fin navbare-----> 
+
+<div class="row m-5 p-5">
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Titre</label>
+  <input type="text" class="form-control" id="myTitre" placeholder="Titre:">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+  <textarea class="form-control" id="myDesc" rows="3">Description</textarea>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Prix</label>
+  <input type="number" class="form-control" id="myPrix" rows="3">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Image</label>
+  <input type="file" class="form-control" id="myFile" placeholder="Photo">
+</div>
+<div class="col">
+<button type="submit" class="btn btn-primary " id="myBtn">Poster vos produits</button>
+</div>
+</div>
+
 <!------footer---------->
 
 <div class="row mt-5 bg-secondary border-top">
@@ -85,5 +108,6 @@
         <!---------fin container globale----->
     <!------JavaScript------>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
+<script src="../js/posteproduit.js"></script>
 </body>
 </html>

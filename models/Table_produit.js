@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const Table_produit = mongoose.Schema({
     titre:{type:String, required:true},
     description:{type:String, required:true},
-    prix:{type:String, required:true},
+    prix:{type:Number, required:true},
     imageUrl:{type:String, required:true}
 });
 

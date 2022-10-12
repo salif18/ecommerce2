@@ -5,18 +5,15 @@ const Articles = require('../models/Table_produit');
 //route pour inserer les nouveaux produits
 exports.insertArticles = (req, res, next) => {
 
-   // const articlesObject =JSON.parse(req.body.articles);
-   // delete articlesObject._id;
-   // delete articlesObject._userId;
+    const articlesObject =JSON.parse(req.body.articles);
+    delete articlesObject._id;
+    delete articlesObject._userId;
 
     const articles = new Articles({
-        titre:req.body.titre,
-        description:req.body.description,
-        prix:req.body.prix,
-        imageUrl:req.body.imageUrl
-       // ...articlesObject,
-       // userId: req.auth.userId,
-       // imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`
+        
+      ...articlesObject,
+        userId: req.auth.userId,
+        imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`
     });
     articles.save()
     .then(() => res.status(201).json({
