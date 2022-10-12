@@ -7,6 +7,8 @@ button.addEventListener('click',(e)=>{
 const infos = {
     nom:document.getElementById('myNom').value,
     prenom:document.getElementById('myPrenom').value,
+    address:document.getElementById('myAddress').value,
+    numero:document.getElementById('myNumber').value,
     email:document.getElementById('myMail').value,
     password:document.getElementById('myPass').value
 }
@@ -26,6 +28,14 @@ const regexMail = (valeur)=>{
 const regexPass = (valeur) =>{
     return  /^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+){6,8}$/.test(valeur);
 }
+//regex address
+const RegexA = (valeur) => {
+  return /^[a-zA-Z0-9\s]{2,20}$/.test(valeur);
+}
+//regexnumero
+ const RegexNu = (valeur) => {
+  return /^[0-9]{8}$/.test(valeur);
+ }
 //controle nom
   if(RegexNM(infos.nom)){
     console.log('Nom correcte');
@@ -44,6 +54,24 @@ const regexPass = (valeur) =>{
     return false;
     e.preventDefault();
   };
+  //controle de l'address
+  if(RegexA(infos.address)){
+    console.log('address correcte')
+    e.preventDefault();
+  }else{
+    console.log('entrer bien une address')
+    return false;
+    e.preventDefault();
+  };
+  //controle de numero
+  if(RegexNu(infos.numero)){
+    console.log('numero correct')
+    e.preventDefault();
+  }else{
+    console.log('le numero doit etre de 8 chiffres');
+    return false;
+    e.preventDefault();
+  }
   //controlle email
   if(regexMail(infos.email)){
     console.log('Email correcte');
@@ -63,11 +91,11 @@ const regexPass = (valeur) =>{
     e.preventDefault();
   };
   //controll et envoie dans la base de donnee
-  if(infos.nom && infos.prenom && infos.email && infos.password){
+  if(infos.nom && infos.prenom && infos.address && infos.numero && infos.email && infos.password){
     const aEnvoyer = infos;
     const myEnv = async () =>{
         try{
-          const res = await fetch('http://localhost:2800/api/auth/signup',{
+          const res = await fetch('http://localhost:3900/auth/signup',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(aEnvoyer)

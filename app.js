@@ -26,17 +26,41 @@ app.use((req, res, next) => {
     next();
 });
 
-//--- fONTIONS--->
-app.get('/',(req,res)=>{
-    res.send({message:'Hello world'})
+//--- FONTIONS--->
+
+// A-routes des pages
+// 1- acceuil
+app.get('/home',(req,res)=>{
+    res.render('shop')
+})
+
+// 2- boutique
+app.get('/boutique',(req,res)=>{
+    res.render('nboutique')
 });
 
-app.get('/home',(req,res)=>{
-    const fruits = [
-       {nom:"pomme",prix:"25f"}];
-    res.render('home',{fruits});
-})
+// 3- nouveautes
+app.get('/nouveautes',(req,res)=>{
+    res.render('nouveaute')
+});
+
+// 4- connection au compte
+app.get('/connection',(req,res) => {
+    res.render('shopconnection')
+});
+
+// 5- inscription
+app.get('/inscription',(req,res) => {
+    res.render('shopinscr')
+});
+
+// B- routes vers la base des donnees
+// 1- routes CRUD
 app.use('/produits',produitsRouter);
+
+// 2-routes des authentifications
 app.use('/auth',userRouter);
+
+//--- Fin des Fonctions ---
 //exportation de l'application dans le server
 module.exports = app;

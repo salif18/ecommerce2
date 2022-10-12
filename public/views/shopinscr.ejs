@@ -15,7 +15,7 @@
 <!------navebare-------->
 <nav class="navbar navbar-dark bg-dark fixed-top"style="border-bottom:2px solid rgb(116, 204, 255)" >
     <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="shop.html"><span class="text-center">MyShop</span><img style="height:2rem" class="ms-3 img-light" src="../imageshop/logo2.png"/></a>
+      <a class="navbar-brand fw-bold" href="home"><span class="text-center">MyShop</span><img style="height:2rem" class="ms-3 img-light" src="../imageshop/logo2.png"/></a>
       <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,11 +27,11 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="shop.html"><i class="fa-solid fa-house m-2"></i>Acceuil</a>
+              <a class="nav-link active" aria-current="page" href="home"><i class="fa-solid fa-house m-2"></i>Acceuil</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"><i class="fa-solid fa-hourglass-start m-2"></i>Nouveautes</a>
-            </li><li><a class="dropdown-item" href="nboutique.html"><i class="fa-solid fa-shop m-2"></i>Notre boutique</a></li>
+            </li><li><a class="dropdown-item" href="boutique"><i class="fa-solid fa-shop m-2"></i>Notre boutique</a></li>
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,11 +39,11 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-dark">
                 
-                <li><a class="dropdown-item" href="shopconnection.html">Connecter</a></li>
+                <li><a class="dropdown-item" href="connection">Connecter</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="shopinscr.html">Ouvrir un compte</a></li>
+                <li><a class="dropdown-item" href="inscription">Ouvrir un compte</a></li>
               </ul>
             </li>
           </ul>
@@ -64,7 +64,7 @@
 </div>
 
 <div class="row">
-    <a class="btn  btn-success m-2 fw-bold " style="border-top:2px solid rgb(116, 204, 255)" href="nboutique.html" >Faites un tour chez nous!!</a>
+    <a class="btn  btn-success m-2 fw-bold " style="border-top:2px solid rgb(116, 204, 255)" href="boutique" >Faites un tour chez nous!!</a>
 </div>
 </div>
 <!----------------------------------fin ligne 1-->
@@ -110,12 +110,20 @@
     <div class="row m-5">
   <form class="">
   <div class="form-floating mb-3 w-50">
+    <input type="text" class="form-control" id="myPrenom"style="border:2px solid blue"  placeholder="Prenom:">
+    <label for="floatingPrenom"><i class="fa-solid fa-user m-2"></i>Prenom</label>
+  </div>
+   <div class="form-floating mb-3 w-50">
     <input type="text" class="form-control" id="myNom"style="border:2px solid blue"  placeholder="Nom:">
     <label for="floatingNom"><i class="fa-solid fa-user m-2"></i>Nom</label>
   </div>
   <div class="form-floating mb-3 w-50">
-    <input type="text" class="form-control" id="myPrenom"style="border:2px solid blue"  placeholder="Prenom:">
-    <label for="floatingPrenom"><i class="fa-solid fa-user m-2"></i>Prenom</label>
+    <input type="text" class="form-control" id="myAddress" style="border:2px solid blue" placeholder="Address:">
+    <label for="floatingAddress"><i class="fa-solid fa-envelope m-2"></i>Address</label>
+  </div>
+  <div class="form-floating mb-3 w-50">
+    <input type="number" class="form-control" id="myNumber" style="border:2px solid blue" placeholder="Numero:">
+    <label for="floatingNumero"><i class="fa-solid fa-envelope m-2"></i>Numero</label>
   </div>
   <div class="form-floating mb-3 w-50">
     <input type="email" class="form-control" id="myMail" style="border:2px solid blue" placeholder="Email:">
@@ -172,6 +180,6 @@
     <!---------fin container globale----->
 <!------JavaScript------>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
-<script src="../js/"></script>
+<script src="../js/shopinscr.js"></script>
 </body>
 </html>

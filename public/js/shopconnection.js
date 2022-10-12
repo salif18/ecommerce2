@@ -37,7 +37,7 @@ signIn.addEventListener('click',(e)=>{
         const doEnv = myDonees;
         const mylog = async () =>{
             try{
-              const res = await fetch('http://localhost:2800/api/auth/login',{
+              const res = await fetch('http://localhost:3900/auth/login',{
                 method:'POST',
                 headers:{'Content-Type':'application/json'},
                 body:JSON.stringify(doEnv)
