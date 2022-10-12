@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>mamshop</title>
+</head>
+<body>
+    <!-----container globale------------>
+<div class="container-fluid " style="background-image: url(../imageshop/bc.jpg);">
+<!------navebare-------->
+<nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#"><span class="text-center">MyShop</span><img style="height:2rem" class="ms-3 img-light" src="../imageshop/logo2.png"/></a>
+      <button class="navbar-toggler bg-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="shop.html"><i class="fa-solid fa-house m-2"></i>Acceuil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nouveaute.html"><i class="fa-solid fa-hourglass-start m-2"></i>Nouveautes</a>
+            </li><li><a class="dropdown-item" href="nboutique.html"><i class="fa-solid fa-shop m-2"></i>Notre boutique</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-address-book m-2"></i>Contacts
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                
+                <li><a class="dropdown-item" href="shopconnection.html">Connecter</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="shopinscr.html">Ouvrir un compte</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Rechercher un article..." aria-label="Search">
+            <button class="btn btn-success" type="submit"><img height="20" style="color:beige" src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"/></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!------Fin navbare-----> 
+<!------footer---------->
+
+<div class="row mt-5 bg-secondary border-top">
+    <div class="col-3">
+        <h1 class="text-center fs-6 m-5" style="color:beige">Sociaux</h1>
+        <a class=" btn p-1 mb-5" href="/"><img width="40" src="https://img.icons8.com/color/48/000000/facebook-new.png"/></a>
+        <a class=" btn p-1 mb-5 " href="/"><img width="40" src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"/></a>
+        <a class=" btn p-1 mb-5"  href="/"><img width="40" src="https://img.icons8.com/color/48/000000/tiktok--v1.png"/></a>
+        <a class=" btn p-1 mb-5" href="/"><img width="40" src="https://img.icons8.com/color/48/40C057/twitter--v1.png"/></a>
+    </div>
+    <div class="col-3">
+        <h1 class="text-center fs-6 m-5" style="color:beige"style="border-bottom: 1px solid beige">A propos</h1>
+    </div>
+    <div class="col-3">
+        <h1 class="text-center fs-6 m-5" style="color:beige">Droits</h1>
+        <p class="text-center   m-1" style="color:beige">&copy 2022-2023 </p>
+        <p class="text-center  m-1" style="color:beige">Tous droits reserves</p>
+    </div>
+    <div class="col-3">
+        <h1 class="text-center fs-6 m-5" style="color:beige" style="border-bottom:1px solid beige">Auteur</h1>
+        <p class="text-center  m-1" style="color:beige" ">Salif Moctar Konate</p>
+        <p class="text-center  m-1" style="color:beige">salifmoctarkonate@gmail.com</p>
+        <p class="text-center  m-1" style="color:beige">salifmoctarkonate@yahoo.fr</p>
+    </div>
+    </div>
+    <!-------fin footer----->
+    </div>
+        <!---------fin container globale----->
+    <!------JavaScript------>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
+</body>
+</html>

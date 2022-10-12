@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="../css/nboutique.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>myshop</title>
+</head>
+<body>
+    <!-----container globale------------>
+<div class="container-fluid " style="background-image: url(../imageshop/bc.jpg);">
+<!------navebare-------->
+<nav class="navbar navbar-dark bg-dark fixed-top"style="border-bottom:2px solid rgb(116, 204, 255)" >
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="shop.html"><span class="text-center">MyShop</span><img style="height:2rem" class="ms-3 img-light" src="../imageshop/logo2.png"/></a>
+    <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="shop.html"><i class="fa-solid fa-house m-2"></i>Acceuil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-hourglass-start m-2"></i>Nouveautes</a>
+          </li><li><a class="dropdown-item" href="nboutique.html"><i class="fa-solid fa-shop m-2"></i>Notre boutique</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-address-book m-2"></i>Contacts
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              
+              <li><a class="dropdown-item" href="shopconnection.html">Connecter</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="shopinscr.html">Ouvrir un compte</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Rechercher un article..." aria-label="Search">
+          <button class="btn btn-success" type="submit"><img height="20" style="color:beige" src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"/></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+<!------Fin navbare-----> 
+
+<!-----------------pub-->
+<div class="col-4 mt-5">
+  <a class="btn btn-danger mt-5 ps-2 ms-5" style="color:beige">Arrivages......!</a>
+  </div>
+  <div class="container">
+  <div class="row">
+      
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner  bg-light">
+            <div class="carousel-item active ">
+              <img src="../imageshop/chemiseimages.jpg" class="d-block w-5 m-4 " width="" height="200" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../imageshop/montre.jpg" class="d-block w-5  m-4"  height="200" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../imageshop/imagesbasket2.jpg" class="d-block w-5 m-4" height="200"  alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  </div>
+  </div>
+  <!-------------fin pub-->
+<!--------------------------------contenu-->
+<!--------------------ligne 1-->
+<div class="row mt-5 p-5">
+    <div class="col ps-5 ">
+        <button class="btn btn-primary acbtn" href="#">Accessoires</button>
+    </div>
+    <div class="col ps-5 ">
+        <button class="btn btn-secondary acbtn2" href="#">Chaussures</button>
+    </div>
+    <div class="col ps-5 ">
+        <button class="btn btn-success acbtn3" href="#">Enfants</button>
+    </div>
+    <div class="col ps-5 ">
+        <button class="btn btn-danger acbtn4" href="#">Femmes</button>
+    </div>
+    <div class="col ps-5">
+        <button class="btn btn-dark acbtn5" href="#" style="color:beige">Hommes</button>
+    </div>
+</div>
+<!--------------------ligne 2-->
+<article>
+<div class="row mb-5 ac">
+
+    <div class="col" >
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+              <img class="card-img-top"style="height:18.5rem"  src="../imageshop/bracel.jpg">
+              <h5 class="card-title m-4">Bracelet</h5>
+              <p class="card-text m-4">3000 Fcfa</p>
+              <a class="btn btn-danger m-4">Acheter <i class="fa-solid fa-cart-shopping m-2"></i></a>
+            </div> 
+            <div class="rating " >
+              <div class="stars"height="5">
+                <i class="fa fa-star gold"></i>
+                <i class="fa fa-star gold"></i>
+                <i class="fa fa-star gold"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <a href="#">Voir les avis.</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+              <img class="card-img-top" style="height:18.5rem" src="../imageshop/ceinture.jpg">
+              <h5 class="card-title m-4">Ceinture a cuire</h5>
+              <p class="card-text m-4">4000 Fcfa</p>
+              <a class="btn btn-danger m-4">Acheter <i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+              <img class="card-img-top" style="height:18.5rem" src="../imageshop/colierh.jpg">
+              <h5 class="card-title m-4">Collier</h5>
+              <p class="card-text m-4">3000 Fcfa</p>
+              <a class="btn btn-danger m-4">Acheter <i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+              <img class="card-img-top"style="height:18.5rem"  src="../imageshop/lunetteso.jpg">
+              <h5 class="card-title m-4">Lunette de Soleil</h5>
+              <p class="card-text m-4">4000 Fcfa</p>
+              <a class="btn btn-danger m-4">Acheter<i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+</div>
+
+<!------------------------ligne 3-->
+<div class="row mb-5 chau">
+
+    <div class="col">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+              <img class="card-img-top" style="height:18.5rem" src="../imageshop/jord.jpg">
+              <h5 class="card-title m-4">Jordan</h5>
+              <p class="card-text m-4">20000Fcfa</p>
+              <a class="btn btn-danger m-4">Acheter<i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+              
+              <img class="card-img-top" style="height:18.5rem" src="../imageshop/soulier.jpg">
+              <h5 class="card-title m-4">Soulier</h5>
+              <p class="card-text m-4">15000</p>
+              <a class="btn btn-danger m-4">Acheter<i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+             
+              <img class="card-img-top" style="height:18.5rem" src="../imageshop/style10156.jpg">
+              <h5 class="card-title m-4">Mocassin</h5>
+              <p class="card-text m-4">10000</p>
+              <a class="btn btn-danger m-4">Acheter<i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+            
+              <img class="card-img-top" style="height:18.5rem" src="../imageshop/bqlen.jpg">
+              <h5 class="card-title m-4">Balenciaga</h5>
+              <p class="card-text m-4">15000</p>
+              <a class="btn btn-danger m-4">Acheter<i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+</div>
+<!-------------------ligne 4-->
+<div class="row mb-5 enf">
+
+    <div class="col ">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+              
+              <img class="card-img-top" style="height:18.5rem" src="../imageshop/enf.jpg">
+              <h5 class="card-title m-4">Robe</h5>
+              <p class="card-text m-4">6000</p>
+              <a class="btn btn-danger m-4">Acheter<i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+              
+              <img class="card-img-top"style="height:18.5rem"   src="../imageshop/penf.jpg">
+              <h5 class="card-title m-4">pantalon</h5>
+              <p class="card-text m-4">4000</p>
+              <a class="btn btn-danger m-4">Acheter<i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+              
+              <img class="card-img-top"style="height:18.5rem"   src="../imageshop/robeenf.jpg">
+              <h5 class="card-title m-4">Robe</h5>
+              <p class="card-text m-4">6000</p>
+              <a class="btn btn-danger m-4">Acheter<i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card mt-5 " style="background:rgb(224, 224, 224)">
+            <div>
+              <img class="card-img-top" style="height:18.5rem"src="../imageshop/pienf.jpg">
+              <h5 class="card-title m-4">Pul</h5>
+              <p class="card-text m-4">5000</p>
+              <a class="btn btn-danger m-4">Acheter<i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+</div>
+<!-------------------------------ligene 5-->
+<div class="row mb-5 fem">
+
+    <div class="col">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+              <img class="card-img-top"style="height:18.5rem" src="../imageshop/cf.jpg">
+              <h5 class="card-title m-4">Chemise</h5>
+              <p class="card-text m-4">8000</p>
+              <a class="btn btn-danger m-4">Acheter<i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+              <img class="card-img-top"style="height:18.5rem" src="../imageshop/chemisf.jpg">
+              <h5 class="card-title m-4">Chemise</h5>
+              <p class="card-text m-4">8000</p>
+              <a class="btn btn-danger m-4">Acheter<i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+              <img class="card-img-top"style="height:18.5rem" src="../imageshop/panf.jpg">
+              <h5 class="card-title m-4">Pantalon</h5>
+              <p class="card-text m-4">6000</p>
+              <a class="btn btn-danger m-4">Acheter<i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+              <img class="card-img-top"style="height:18.5rem" src="../imageshop/conmbif.jpg">
+              <h5 class="card-title m-4">Combinaison</h5>
+              <p class="card-text m-4">8000</p>
+              <a class="btn btn-danger m-4">Acheter<i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+</div>
+<!--------------------------lign 6-->
+<div class="row mb-5 hom">
+
+    <div class="col">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+              <img class="card-img-top"style="height:18.5rem" src="../imageshop/ch3.jpg">
+              <h5 class="card-title m-4">Chemise carrolier</h5>
+              <p class="card-text m-4">7500</p>
+              <a class="btn btn-danger m-4">Acheter<i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+                <div class="rating " >
+                  <div class="stars"height="5">
+                    <i class="fa fa-star gold"></i>
+                    <i class="fa fa-star gold"></i>
+                    <i class="fa fa-star gold"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <a href="#">Voir les avis.</a>
+                </div>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+              <img class="card-img-top"style="height:18.5rem" src="../imageshop/chs.jpg">
+              <h5 class="card-title m-4">Chemise Surf</h5>
+              <p class="card-text m-4">8000</p>
+              <a class="btn btn-danger m-4">Acheter<i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+              <img class="card-img-top"style="height:18.5rem" src="../imageshop/ph.jpg">
+              <h5 class="card-title m-4">Pantalon</h5>
+              <p class="card-text m-4">7000</p>
+              <a class="btn btn-danger m-4">Acheter<i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card mt-5" style="background:rgb(224, 224, 224)">
+            <div>
+              <img class="card-img-top"style="height:18.5rem"  src="../imageshop/shs.jpg">
+              <h5 class="card-title m-4">Short</h5>
+              <p class="card-text m-4">6000</p>
+              <a class="btn btn-danger m-4">Acheter<i class="fa-solid fa-cart-shopping m-2"></i></a>
+              <div class="rating " >
+                <div class="stars"height="5">
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star gold"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <a href="#">Voir les avis.</a>
+              </div>
+            </div> 
+        </div>
+    </div>
+
+   
+</div>
+</article>
+<!-------------------fin du contenu-->
+<!------footer---------->
+
+<div class="row mt-5 bg-secondary" style="border-top:2px solid rgb(116, 204, 255)">
+    <div class="col-3">
+        <h1 class="text-center fs-6 m-5" style="color:beige"><span style="border-bottom:2px solid #fff">Sociaux</span></h1>
+        <a class=" btn m-1 mb-5" href="/"><img width="40" src="https://img.icons8.com/color/48/000000/facebook-new.png"/></a>
+        <a class=" btn m-1 mb-5 " href="/"><img width="40" src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"/></a>
+        <a class=" btn m-1 mb-5"  href="/"><img width="40" src="https://img.icons8.com/color/48/000000/tiktok--v1.png"/></a>
+        <a class=" btn m-1 mb-5" href="/"><img width="40" src="https://img.icons8.com/color/48/40C057/twitter--v1.png"/></a>
+    </div>
+    <div class="col-3">
+        <h1 class="text-center fs-6 m-5" style="color:beige"style="border-bottom: 1px solid beige"><span style="border-bottom:2px solid #fff">A propos</span></h1>
+        <p class="text-center" style="color:beige">    À propos de La Fabrique
+          Mentions légales
+          Politique de gestion des cookies
+          Contact
+          Conditions Générales d’Utilisation
+      </p>
+    </div>
+    <div class="col-3">
+        <h1 class="text-center fs-6 m-5" style="color:beige"><span style="border-bottom:2px solid #fff">Droits</span></h1>
+
+        <p class="text-center   m-1" style="color:beige">&copy 2022-2023 </p>
+        <p class="text-center  m-1" style="color:beige">Tous droits reserves</p>
+        
+    </div>
+    <div class="col-3">
+        <h1 class="text-center fs-6 m-5" style="color:beige" style="border-bottom:1px solid beige"><span style="border-bottom:2px solid #fff">Auteur</span></h1>
+        <p class="text-center  m-1" style="color:beige" >Salif Moctar Konate</p>
+        <p class="text-center  m-1" style="color:beige">Email: salifmoctarkonate@gmail.com</br>
+       salifmoctarkonate@yahoo.fr</p>
+    </div>
+    </div>
+    <!-------fin footer----->
+    </div>
+        <!---------fin container globale----->
+    <!------JavaScript------>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
+<script src="../js/nboutique.js"></script>
+</body>
+</html>
